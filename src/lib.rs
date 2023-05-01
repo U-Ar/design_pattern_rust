@@ -3,3 +3,5 @@ pub mod c02_adapter;
 pub mod c03_template;
 pub mod c04_factory;
 pub mod c05_singleton;
+pub mod c06_prototype;
+pub mod c07_builder;

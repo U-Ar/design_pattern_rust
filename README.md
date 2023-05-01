@@ -40,3 +40,11 @@
   - 必要が出てきたら明示的に配列なりにプールすることになるだろう
 - デフォルトではenumに比較演算子は使えない 
   - 等値比較を可能にしたいなら #[derive(PartialEq)]
+
+## 第７章：Builderパターン
+
+- 文字列を書き出す場合、write!やwriteln!マクロを使ってprint!と同様にできる
+  - File::createでファイルオブジェクトを作る
+- BuilderをDirectorに持たせて、Director側で操作を行いたいとき、
+  - Builderの可変参照を渡す
+    - ただしライフタイム注釈を付けて、Builderが解体された時点でDirectorも解体されることを保証する
