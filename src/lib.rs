@@ -5,3 +5,6 @@ pub mod c04_factory;
 pub mod c05_singleton;
 pub mod c06_prototype;
 pub mod c07_builder;
+pub mod c08_abstfactory;
+pub mod c09_bridge;
+pub mod c10_strategy;
